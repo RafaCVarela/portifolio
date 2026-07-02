@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  // SEÇÃO: PROJETOS EM DESTAQUE
+  section(class="mb-16")
+    h1(class="text-4xl mb-8 font-bold border-b border-gray-300 pb-4") Projetos em Destaque
+    
+    div(class="grid grid-cols-1 md:grid-cols-2 gap-8")
+      a(href="/leitura", class="bg-white p-8 border border-gray-200 hover:shadow-md transition")
+        div(class="flex gap-2 mb-4")
+          span(class="text-xs uppercase tracking-widest text-gray-500 border border-gray-200 px-2 py-1") Fullstack
+        h2(class="text-2xl font-bold mb-2") Plataforma de Cursos Online
+        p(class="text-gray-600 mb-4") Desenvolvimento completo de um LMS usando Node.js, Express e PostgreSQL.
+        span(class="text-sm text-gray-400 italic") Concluído em 2026
+
+      a(href="/leitura", class="bg-white p-8 border border-gray-200 hover:shadow-md transition")
+        div(class="flex gap-2 mb-4")
+          span(class="text-xs uppercase tracking-widest text-gray-500 border border-gray-200 px-2 py-1") Frontend
+        h2(class="text-2xl font-bold mb-2") Dashboard Analítico
+        p(class="text-gray-600 mb-4") Interface complexa de dados transformada em algo simples e responsivo.
+        span(class="text-sm text-gray-400 italic") Concluído em 2025
+
+  // SEÇÃO: ARQUIVO DE PROJETOS
+  section
+    h2(class="text-2xl mb-6 font-bold") Arquivo Histórico
+    
+    div(class="flex flex-col gap-4")
+      a(href="/leitura", class="bg-white p-6 border border-gray-200 flex flex-col sm:flex-row justify-between items-start sm:items-center hover:bg-gray-50 transition")
+        div
+          div(class="flex gap-2 mb-2")
+            span(class="text-xs uppercase tracking-widest text-gray-500") CLI
+          h3(class="text-xl font-bold") Ferramenta de Automação de Pastas
+        span(class="text-sm text-gray-400 italic mt-4 sm:mt-0 whitespace-nowrap") 2024

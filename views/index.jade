@@ -1,0 +1,45 @@
+extends layout
+
+block content
+  // SEÇÃO: PROJETOS PRINCIPAIS (Carrossel Horizontal)
+  section(class="mb-16")
+    h2(class="text-3xl mb-6 font-bold") Projetos Principais
+    
+    // Container do Carrossel (overflow-x-auto permite a rolagem horizontal)
+    div(class="flex overflow-x-auto gap-6 pb-4 snap-x snap-mandatory")
+      
+      // Cartão 1
+      a(href="/projeto/1", class="min-w-[300px] md:min-w-[400px] bg-white p-6 border border-gray-200 snap-center hover:shadow-md transition")
+        div(class="flex gap-2 mb-3")
+          span(class="bg-gray-100 px-2 py-1 text-xs border border-gray-200") UX Design
+          span(class="bg-gray-100 px-2 py-1 text-xs border border-gray-200") Express
+        h3(class="text-xl font-bold mb-2") Sistema de Gestão Minimalista
+        p(class="text-sm text-gray-600 line-clamp-3") Uma plataforma focada na experiência do usuário, removendo distrações visuais para entregar produtividade.
+
+      // Cartão 2
+      a(href="/projeto/2", class="min-w-[300px] md:min-w-[400px] bg-white p-6 border border-gray-200 snap-center hover:shadow-md transition")
+        div(class="flex gap-2 mb-3")
+          span(class="bg-gray-100 px-2 py-1 text-xs border border-gray-200") API
+          span(class="bg-gray-100 px-2 py-1 text-xs border border-gray-200") Node.js
+        h3(class="text-xl font-bold mb-2") Microsserviço de Pagamentos
+        p(class="text-sm text-gray-600 line-clamp-3") Arquitetura limpa e de alta performance desenhada para suportar milhões de transações diárias.
+
+  // SEÇÃO: PROJETOS RECENTES (Grid Vertical)
+  section
+    h2(class="text-3xl mb-6 font-bold") Mais Recentes
+    
+    div(class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6")
+      
+      // Cartão Recente 1
+      a(href="/projeto/3", class="bg-white p-6 border border-gray-200 hover:shadow-md transition")
+        div(class="flex gap-2 mb-3")
+          span(class="bg-gray-100 px-2 py-1 text-xs border border-gray-200") Web
+        h3(class="text-xl font-bold mb-2") E-commerce Moda
+        p(class="text-sm text-gray-600") Redesign completo da jornada de compra de uma loja de alta costura.
+
+      // Cartão Recente 2
+      a(href="/projeto/4", class="bg-white p-6 border border-gray-200 hover:shadow-md transition")
+        div(class="flex gap-2 mb-3")
+          span(class="bg-gray-100 px-2 py-1 text-xs border border-gray-200") Mobile
+        h3(class="text-xl font-bold mb-2") App de Leitura
+        p(class="text-sm text-gray-600") Interface focada em tipografia e conforto visual para leitores assíduos.

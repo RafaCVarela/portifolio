@@ -1,0 +1,52 @@
+extends layout
+
+block content
+  // CONTAINER PRINCIPAL (Restringe a largura para foco na leitura)
+  article(class="max-w-3xl mx-auto")
+    
+    // CABEÇALHO DA PUBLICAÇÃO
+    header(class="mb-8")
+      h1(class="text-4xl md:text-5xl font-bold mb-4 leading-tight text-black") O Título Principal da sua Publicação
+      h2(class="text-xl md:text-2xl text-gray-600 italic mb-6") Um subtítulo complementar e elegante que dá mais contexto ao tema, mantendo o minimalismo.
+      
+      div(class="flex flex-wrap items-center gap-4 text-sm text-gray-500 border-b border-gray-300 pb-4")
+        span 📍 Salvador, BA
+        span •
+        span 📅 02 Jul 2026
+        span •
+        span ⏰ 14:30
+        
+    // CAIXA BRANCA DE CONTEÚDO
+    div(class="bg-white p-8 md:p-12 border border-gray-200 shadow-sm")
+      
+      // SUMÁRIO
+      nav(class="mb-10 bg-gray-50 p-6 border border-gray-100")
+        h3(class="text-lg font-bold mb-4 uppercase tracking-widest text-black") Sumário
+        ul(class="list-none space-y-2 text-gray-700")
+          li
+            a(href="#contexto", class="hover:underline hover:text-black") 1. Contexto do Projeto
+          li
+            a(href="#desenvolvimento", class="hover:underline hover:text-black") 2. O Processo de Desenvolvimento
+          li
+            a(href="#resultados", class="hover:underline hover:text-black") 3. Resultados e Conclusão
+
+      // CONTEÚDO (Textos e Mídias)
+      div(class="text-lg leading-relaxed text-gray-800 space-y-6")
+        p(id="contexto") O texto principal começa aqui. A leitura flui perfeitamente devido ao contraste do fundo branco da caixa com o fundo bege geral do site. 
+        
+        p Ao manter o alinhamento limpo e focar em tipografia clássica como a Times New Roman, o leitor foca apenas no que importa: a mensagem e o conhecimento passado.
+        
+        // ESPAÇO PARA FOTO/VÍDEO
+        figure(class="my-10")
+          // Substitua o src por um vídeo ou imagem real
+          div(class="w-full bg-gray-200 h-64 md:h-96 flex items-center justify-center border border-gray-300")
+            span(class="text-gray-500 italic") [ Espaço reservado para Imagem ou Vídeo do Projeto ]
+          figcaption(class="text-center text-sm text-gray-500 mt-3 italic") Demonstração visual do projeto em funcionamento na web.
+
+        h3(id="desenvolvimento", class="text-2xl font-bold mt-10 mb-4 text-black") O Processo de Desenvolvimento
+        
+        p Mais parágrafos com o desenvolvimento do conteúdo. Se houver necessidade de listar itens, use um espaçamento adequado para manter a elegância.
+        
+        h3(id="resultados", class="text-2xl font-bold mt-10 mb-4 text-black") Resultados e Conclusão
+        
+        p Finalização da página. O leitor chegou até o fim de forma confortável sem interrupções visuais exageradas.

@@ -1,0 +1,44 @@
+extends layout
+
+block content
+  // SEÇÃO: DESTAQUES (Sem carrossel, grid estático)
+  section(class="mb-16")
+    h1(class="text-4xl mb-8 font-bold border-b border-gray-300 pb-4") Artigos em Destaque
+    
+    div(class="grid grid-cols-1 md:grid-cols-2 gap-8")
+      // Destaque 1
+      a(href="/leitura", class="bg-white p-8 border border-gray-200 hover:shadow-md transition")
+        div(class="flex gap-2 mb-4")
+          span(class="text-xs uppercase tracking-widest text-gray-500 border border-gray-200 px-2 py-1") Reflexão
+        h2(class="text-2xl font-bold mb-2") O Minimalismo no Código
+        p(class="text-gray-600 mb-4") Como escrever menos para entregar mais e melhorar a manutenção de sistemas legados.
+        span(class="text-sm text-gray-400 italic") 2 de Julho de 2026
+
+      // Destaque 2
+      a(href="/leitura", class="bg-white p-8 border border-gray-200 hover:shadow-md transition")
+        div(class="flex gap-2 mb-4")
+          span(class="text-xs uppercase tracking-widest text-gray-500 border border-gray-200 px-2 py-1") Design
+        h2(class="text-2xl font-bold mb-2") A Tipografia na Web
+        p(class="text-gray-600 mb-4") Por que voltamos a usar fontes serifadas em interfaces digitais modernas?
+        span(class="text-sm text-gray-400 italic") 15 de Junho de 2026
+
+  // SEÇÃO: LISTAGEM CRONOLÓGICA COMPLETA
+  section
+    h2(class="text-2xl mb-6 font-bold") Todos os Textos
+    
+    div(class="flex flex-col gap-4")
+      // Item de Lista 1
+      a(href="/leitura", class="bg-white p-6 border border-gray-200 flex flex-col sm:flex-row justify-between items-start sm:items-center hover:bg-gray-50 transition")
+        div
+          div(class="flex gap-2 mb-2")
+            span(class="text-xs uppercase tracking-widest text-gray-500") Tutorial
+          h3(class="text-xl font-bold") Entendendo Express.js e Node
+        span(class="text-sm text-gray-400 italic mt-4 sm:mt-0 whitespace-nowrap") 28 de Maio de 2026
+
+      // Item de Lista 2
+      a(href="/leitura", class="bg-white p-6 border border-gray-200 flex flex-col sm:flex-row justify-between items-start sm:items-center hover:bg-gray-50 transition")
+        div
+          div(class="flex gap-2 mb-2")
+            span(class="text-xs uppercase tracking-widest text-gray-500") Carreira
+          h3(class="text-xl font-bold") Transição para Desenvolvimento Backend
+        span(class="text-sm text-gray-400 italic mt-4 sm:mt-0 whitespace-nowrap") 10 de Abril de 2026
