@@ -4,15 +4,17 @@
  * Module dependencies.
  */
 
-var app = require('../app');
-var debug = require('debug')('portifolio:server');
-var http = require('http');
+import app from '../app.js';
+import http from 'http';
+import debugModule from 'debug';
 
 /**
  * Get port from environment and store in Express.
- */
+*/
 
+const debug = debugModule('portifolio:server');
 var port = normalizePort(process.env.PORT || '3000');
+
 app.set('port', port);
 
 /**

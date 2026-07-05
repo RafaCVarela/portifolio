@@ -1,5 +1,6 @@
-var express = require('express');
+import express from '../node_modules/express/index.js';
 var router = express.Router();
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -32,4 +33,4 @@ router.get('/contato', function(req, res, next) {
   res.render('contato', { title: 'Contato | Portfólio' });
 });
 
-module.exports = router;
+export default router;
